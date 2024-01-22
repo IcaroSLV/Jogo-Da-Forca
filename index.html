@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forca.css">
+</head>
+<body> 
+    <div class="choose">
+        <button onclick="openModal()">Escolher palavra / Abrir e Fechar</button>
+        <div class="modal" id="modal">
+            <input type="text" id="palavraEscolhida">
+            <button onclick="EscolherPalavra()">Escolher</button>
+        </div>
+    </div>
+    <main>
+        <div class="forcaImg">
+            <img src="" alt="" id="forcaImg">
+        </div>
+        <div class="gameContent">
+            <div class="inputContent">
+                <p>LETRA:</p>
+                <div>
+                    <input type="text" name="" id="letter" maxlength="1">
+                    <button onclick="verificarLetra()">Chutar</button>
+                </div>
+            </div>
+            <div id="palavra">
+            </div>
+            <div class="exta">
+                <h3>Letras Usadas:</h3>
+                <div id="letrasUsadas">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="forca.js"></script>
+</body>
+</html>
